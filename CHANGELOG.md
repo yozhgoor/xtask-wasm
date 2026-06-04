@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.6] - 2026-06-04
+
+### Fixed
+
+- `Dist::build()` now passes `--lib` to cargo (when not building an example),
+  avoiding filename collisions when a package has both a binary and a library
+  target with the same name.
+
 ## [xtask-wasm-run-example 0.6.4] - 2026-04-28
 
 ### Fixed
@@ -181,7 +189,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   codebase used `assets`, silently breaking auto-discovery for anyone following
   the documented naming convention.
 
-[Unreleased]: https://github.com/rustminded/xtask-wasm/compare/v0.6.5...HEAD
+[Unreleased]: https://github.com/rustminded/xtask-wasm/compare/v0.6.6...HEAD
+[0.6.6]: https://github.com/rustminded/xtask-wasm/compare/v0.6.5...v0.6.6
 [0.6.5]: https://github.com/rustminded/xtask-wasm/compare/v0.6.4...v0.6.5
 [0.6.4]: https://github.com/rustminded/xtask-wasm/compare/v0.6.3...v0.6.4
 [0.6.0]: https://github.com/rustminded/xtask-wasm/compare/v0.5.3...v0.6.0
