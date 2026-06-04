@@ -378,6 +378,8 @@ impl Dist {
 
         if let Some(example) = &self.example {
             build_command.args(["--example", example]);
+        } else {
+            build_command.arg("--lib");
         }
 
         let build_dir = metadata
